@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rad_num_button_size">40dp</dimen>
+    <dimen name="rad_symb_btn_size">20</dimen>
+    <dimen name="text_hight">70dp</dimen>
+    <dimen name="margin_top">70dp</dimen>
+    <dimen name="option_list_size">20sp</dimen>
+</resources>
