@@ -11,16 +11,12 @@
     <TextView
         android:id="@+id/count_text"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/text_hight"
+        android:layout_height="@dimen/margin_top"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/input_text"/>
 
-    <TextView
-        android:id="@+id/result_text"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/text_hight"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/count_text" />
+
 
 
     <com.google.android.material.button.MaterialButton
