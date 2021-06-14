@@ -11,11 +11,14 @@
     <string name="key_9">9</string>
     <string name="key_0">0</string>
     <string name="key_dot">.</string>
-    <string name="key_X">X</string>
-    <string name="key_devided">/</string>
+    <string name="key_multiple">X</string>
+    <string name="key_divided">/</string>
     <string name="key_plus">+</string>
     <string name="key_minus">-</string>
     <string name="key_equals">=</string>
     <string name="key_backspace">⌫</string>
     <string name="key_clear">C</string>
+    <string name="key_reset">Res</string>
+    <string name="key_theme">Custom</string>
+    <string name="key_theme_def">Def</string>
 </resources>

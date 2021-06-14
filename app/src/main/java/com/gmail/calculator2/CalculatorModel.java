@@ -1,6 +1,6 @@
 package com.gmail.calculator2;
 
-public class Calculation {
+public class CalculatorModel {
     private int firstArg;
     private int secondArg;
 
@@ -17,7 +17,7 @@ public class Calculation {
         resultShow
     }
 
-    public Calculation() {
+    public CalculatorModel() {
         state = State.firstArgInput;
     }
 
@@ -84,7 +84,7 @@ public class Calculation {
                 case R.id.key_minus:
                     inputStr.append(firstArg - secondArg);
                     break;
-                case R.id.multiply:
+                case R.id.key_multiple:
                     inputStr.append(firstArg * secondArg);
                     break;
                 case R.id.key_divided:

@@ -9,14 +9,39 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Calculation calculator;
+    private CalculatorModel calculator;
 
     private TextView text;
+    // смена тем
+    private ThemeStorge storage;
+    // смена тем
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+// смена тем
+        storage = new ThemeStorge(this);
+        setTheme(storage.getTheme().getResource());
         setContentView(R.layout.activity_main);
+// смена тем
+
+        findViewById(R.id.key_change_theme_cust).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                storage.setTheme(Theme.CUSTOM);
+                recreate();
+            }
+        });
+
+        findViewById(R.id.key_change_theme_def).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                storage.setTheme(Theme.DEFAULT);
+                recreate();
+            }
+        });
+        //смена тем
 
         int[] numberIds = new int[] {
                 R.id.key_0,
@@ -34,14 +59,14 @@ public class MainActivity extends AppCompatActivity {
         int[] actionsIds = new int[] {
                 R.id.key_plus,
                 R.id.key_minus,
-                R.id.multiply,
+                R.id.key_multiple,
                 R.id.key_divided,
                 R.id.key_equals
         };
 
         text = findViewById(R.id.count_text);
 
-        calculator = new Calculation();
+        calculator = new CalculatorModel();
 
         View.OnClickListener numberButtonClickListener = new View.OnClickListener() {
             @Override
@@ -67,15 +92,12 @@ public class MainActivity extends AppCompatActivity {
             findViewById(actionsIds[i]).setOnClickListener(actionButtonOnclickListener);
         }
 
-        findViewById(R.id.key_clear).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.key_reset).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 calculator.reset();
                 text.setText(calculator.getText());
             }
         });
-
-
     }
-
 }
