@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomStileBtnText">
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="CustomStileBtn">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="CustomStileBtnTheme">
+        <item name="android:textSize">30sp</item>
+        <item name="android:background">@color/red</item>
+    </style>
+
+</resources>
