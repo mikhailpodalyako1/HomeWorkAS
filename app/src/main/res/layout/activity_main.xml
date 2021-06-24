@@ -31,4 +31,5 @@
         android:name="com.gmail.notebook2.ui.list.NoteListFragment"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
 
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
