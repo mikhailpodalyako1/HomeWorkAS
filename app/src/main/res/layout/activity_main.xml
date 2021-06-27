@@ -14,10 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:title="@string/toolbar_title"
-            android:background="@color/teal_200"
+            app:title="@string/my_notes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -29,7 +28,7 @@
         android:layout_height="match_parent"
         android:background="@color/teal_700"
         android:name="com.gmail.notebook2.ui.list.NoteListFragment"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
